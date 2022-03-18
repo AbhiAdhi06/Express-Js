@@ -19,6 +19,6 @@ mongoose
     console.log("Connection Successful");
   })
   .catch((err) => console.log(err));
-app.listen(8000, () => {
+app.listen(process.env.PORT, () => {
   console.log("App Is Running On: http://localhost:8000");
 });

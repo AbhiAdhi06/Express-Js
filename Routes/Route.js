@@ -64,13 +64,4 @@ router.post("/hash", async (req, res) => {
   });
 });
 
-/*
-{
-    "name": "Admin",
-    "email": "abhisek",
-    "phone": 6296767187,
-    "password" : "admin"
-}
-*/
-
 module.exports = router;
