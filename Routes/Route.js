@@ -4,7 +4,16 @@ const mongoose = require("mongoose");
 const router = express.Router();
 const User = require("../Model/Schema");
 
+
 router.get("/", (req, res) => {
+      res.json({
+            "status": "ok",
+            "message": "Welcome"
+       })
+})
+
+
+router.get("/home", (req, res) => {
   User.find({}, (err, docs) => {
     res.json(docs);
   });
